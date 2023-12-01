@@ -15,7 +15,7 @@
 <main class="container">
     <?php
    $subject=$Que->find($_GET['id']);
-?>
+  ?>
 <h2 class="text-cetner"><?=$subject['text'];?></h2>
 <form action="./api/add_vote.php" method="post">
 <ul class="list-group col-6 mx-auto">

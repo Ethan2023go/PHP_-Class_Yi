@@ -6,9 +6,9 @@ $opt['count']=$opt['count']+1;
 
 $subject=$Que->find($opt['subject_id']);
 // $opts=$Que->all(['subject_id'=>$_GET['id']]); 這條拿到主題
-$subject['count']=$subject['count'];
+$subject['count']=$subject['count']+1;
 
 $Que->save($opt);
 $Que->save($subject);
 
-header("location:../result.php?id={subject['id']}");
+header("location:../result.php?id={$subject['id']}");
