@@ -1,6 +1,6 @@
 <?php
 include_once "db.php";
-dd($_POST);
+// dd($_POST);
 foreach($_POST['id'] as $key => $id){
     if(isset($_POST['del']) && in_array($id,$_POST['del'])){
         $Title->del($id);
@@ -12,6 +12,6 @@ foreach($_POST['id'] as $key => $id){
     }
 }
 
-// header("location:index.php");
+header("location:index.php");
 
 ?>
