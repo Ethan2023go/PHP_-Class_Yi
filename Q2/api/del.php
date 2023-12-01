@@ -2,9 +2,9 @@
 
 if(isset($_GET['id'])){
     $Que->del($_GET['id']);
-    $Que->del($_GET['subject_id']);
+    $Que->del(['subject_id'=>$_GET['id']]);
 }
 
-header("locaction:../admin.php");
+header("location:../admin.php");
 
 ?>

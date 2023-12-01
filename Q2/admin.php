@@ -57,7 +57,7 @@
             <td>
                 <button class="btn btn-info">顯示</button>
                 <button class="btn btn-success">編輯</button>
-                <a href="./api/del.php?id<?=$que['id'];?>">
+                <a href="./api/del.php?id=<?=$que['id'];?>">
                    <button class="btn btn-danger">刪除</button>
                 </a>
             </td>
