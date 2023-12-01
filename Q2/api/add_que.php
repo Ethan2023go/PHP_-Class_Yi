@@ -1,6 +1,7 @@
 <?php
 
-include_once "db.php";
+include_once "../db.php";
+// 路徑記得!!
 
 dd($_POST);
 $data=[];
@@ -21,7 +22,7 @@ foreach($_POST['opt'] as $opt){
     $Que->save($data);
 }
 
-header("location:admin.php");
+// header("location:admin.php");
 
 ?>
 
