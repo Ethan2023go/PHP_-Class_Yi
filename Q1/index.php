@@ -41,7 +41,8 @@
          <td><input type="radio" name="sh" id="" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>></td>
                                 <!-- 加入name才能單選 -->
         <td><input type="checkbox" name="del[]" id="" value="<?=$row['id'];?>"></td>
-        <td><input class='btn btn-primary' type="button" value="更新圖片"></td>
+        <td><input class='btn btn-primary' type="button" value="更新圖片" onclick="op('#cover','#cvr','upload_title.php?id=<?=$row['id'];?>')"></td>
+        <!-- onclick 彈出視窗功能 -->
         <input type="hidden" name="id[]" value="<?=$row['id'];?>">
     </tr>
     <?php
@@ -50,6 +51,7 @@
 </table>
 <div class="d-flex justify-content-between">
     <div><input type="button"  value="新增網站標題圖片" onclick="op('#cover','#cvr','title.php')"></div>
+                                                    
     <div>
         <input type="submit" value="修改確定">
         <input type="reset" value="重置">
