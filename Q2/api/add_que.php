@@ -24,6 +24,7 @@ foreach($_POST['opt'] as $opt){
 
 header("location:../admin.php");
 
+
 ?>
 
 

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="p-5">
-        <h1 class="text-center">問卷投票</h1>
+        <h1 class="text-center">問卷結果</h1>
     </header>
 
 <main class="container">
@@ -24,7 +24,7 @@
      foreach($opts as $idx => $opt){
     ?>
     <li class="list-group-item list-group-item-action">
-        <input type="radio" name="opt" id="" value="<?=$opt['id'];?>">
+        
         <?=$opt['text'];?>
     </li>
     <?php

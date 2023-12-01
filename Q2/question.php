@@ -28,8 +28,8 @@
                 ?>
                 <tr>
                     <td><?=$idx+1;?></td>
-                    <td><?$que['text'];?></td>
-                    <td><?$que['count'];?></td>
+                    <td><?=$que['text'];?></td>
+                    <td><?=$que['count'];?></td>
                     <td><a href="result.php?id=<?=$que['id'];?>">投票結果</a></td>
                     <td>
                     <a href="vote.php?id=<?=$que['id'];?>">我要投票</a>
